@@ -45,7 +45,7 @@ mkdir -p ./data/processed/server_logs
 mkdir -p ./data/processed/user_logs
 mkdir -p ./data/processed/event_logs
 
-# ✅ Verify that they exist (for debugging)
+# Verify that they exist (for debugging)
 echo "Created processed folders:"
 ls -d ./data/processed/*
 
@@ -64,8 +64,6 @@ find ./data/processed/user_logs -type f -name "*ipaddr*" -exec rm -f {} +
 
 # 8. Create a file named ./data/inventory.txt that lists all the files in the subfolders of ./data/processed
 ls -R ./data/processed > ./data/inventory.txt
-
-
 
 ###########################################
 
