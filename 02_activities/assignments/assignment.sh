@@ -64,6 +64,7 @@ find ./data/processed/user_logs -type f -name "*ipaddr*" -exec rm -f {} +
 # 8. Create a file named ./data/inventory.txt that lists all the files in the subfolders of ./data/processed
 ls -R ./data/processed > ./data/inventory.txt
 
+
 ###########################################
 
 echo "Project setup is complete!"
