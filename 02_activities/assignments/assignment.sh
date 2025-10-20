@@ -64,6 +64,8 @@ find ./data/raw -type f -name "*ipaddr*" -exec rm -f {} +
 find ./data/processed/user_logs -type f -name "*ipaddr*" -exec rm -f {} +
 =======
 # 7. For user privacy, remove all files containing IP addresses (files with "ipaddr" in the filename) from ./data/raw and ./data/processed/user_logs
+find ./data/raw -type f -name "*ipaddr*" -exec rm -f {} +
+find ./data/processed/user_logs -type f -name "*ipaddr*" -exec rm -f {} +
 rm -rf ./data
 >>>>>>> ea20676d33161a6f4d0fcd3c4f7aa5360f0f4309
 
